@@ -5,7 +5,7 @@ import {
   } from '../actions/mainActions';
 
 export const initialState = {
-    lyrics: 'these are default lyrics!', 
+    lyrics: 'No lyrics yet! Run a search!', 
     error: '',
     isFetching: false
 }; 

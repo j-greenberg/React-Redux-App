@@ -14,6 +14,7 @@ const mapStateToProps = state => {
 function App() {
   return (
     <div className="App">
+      <h1>Lyrics Finder</h1>
       <SearchForm/>
       <Lyrics/>
     </div>

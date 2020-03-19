@@ -7,7 +7,7 @@ export const FETCH_LYRICS_FAIL = 'FETCH_LYRICS_FAIL';
 export const getLyrics = (search) => (dispatch, getState) => {
   dispatch({ type: FETCH_LYRICS_START });
   axios
-    .get(`https://cors-anywhere.herokuapp.com/https://api.lyrics.ovh/v1/${search.artist}/${search.song}`)
+    .get(`https://api.lyrics.ovh/v1/${search.artist}/${search.song}`)
     .then(res => {
         console.log(res.data.lyrics)
         dispatch({ type: FETCH_LYRICS_SUCCESS, payload: res.data.lyrics })

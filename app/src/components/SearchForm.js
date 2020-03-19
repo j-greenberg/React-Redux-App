@@ -26,18 +26,28 @@ const SearchForm = props => {
     return (
         <div>
             <Container>
-            <h1>Search Form</h1>
             <form>
 
-                {/* <label>Artist:</label> */}
+                {/* <label>Artist:</label>
                 
-                {/* <input
+                <input
                 type='text'
                 name='artist'
                 value={search.artist}
                 onChange={handleChanges}/>
-                 */}
                 
+                <label>Song:</label>
+
+                <input
+                type='text'
+                name='song'
+                value={search.song}
+                onChange={handleChanges}/>
+
+                <button
+                onClick={handleSubmit}>Get Lyrics!</button> */}
+
+
                 <TextField
                 type='text'
                 name='artist'
@@ -50,14 +60,6 @@ const SearchForm = props => {
                 onChange={handleChanges}
                 />
 
-                {/* <label>Song:</label> */}
-
-                {/* <input
-                type='text'
-                name='song'
-                value={search.song}
-                onChange={handleChanges}/> */}
-
                 <TextField
                 type='text'
                 name='song'
@@ -69,9 +71,6 @@ const SearchForm = props => {
                 required
                 id='song'/>
                 
-                {/* <button
-                onClick={handleSubmit}>Get Lyrics!</button> */}
-
                 <Button
                 variant='contained'
                 color='primary'
